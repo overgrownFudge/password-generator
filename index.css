@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Inter';
 }
 
 .generate-pw-container {
@@ -15,9 +16,6 @@ body {
 .display-passwords-container {
     border-top: 1px solid #D5D4D8;
 }
-
-
-
 
 .title {
     font-family: Inter;
@@ -76,11 +74,11 @@ body {
 
 
 .display-passwords-container {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     max-width: 600px;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 1em;
+    align-items: center;
+    justify-content: center;
     margin: 4em auto;
     padding: 1.5em;
 
@@ -118,6 +116,7 @@ body {
     .actions {
         display: flex;
         flex-direction: column;
+        align-items: center;
         margin: 1em;
     }
 
@@ -125,6 +124,4 @@ body {
         margin: 0.5em;
         padding: 0.4em 0.8em;
     }
-
-
 }

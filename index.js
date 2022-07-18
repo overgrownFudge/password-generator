@@ -28,8 +28,6 @@ changePasswordLength.addEventListener('input', () => num = changePasswordLength.
 
 function renderPassword() {
    let passwords = generatePassword(num)
-   //console.log(passwords)
-   //console.log(displayPassword)
    for (let i = 0; i < displayPassword.length; i++) {
 
       displayPassword[i].textContent = passwords[i]
